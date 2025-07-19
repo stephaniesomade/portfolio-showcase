@@ -14,15 +14,18 @@ nav {
 
 .navbar {
   display: flex;
-  justify-content: flex-start;
-  /* padding: 1rem 2rem; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   gap: 2rem;
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   position: fixed;
   top: 1rem;
   left: 1rem;
+  width: calc(100vw - 4rem); /* Full viewport width minus left margin and padding */
   z-index: 1000;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .nav-links {
@@ -62,4 +65,60 @@ nav {
   text-decoration: underline;
   text-decoration-color: #e98bab !important;
   text-underline-offset: 10px;
+}
+
+.settings-dropdown {
+  position: relative;
+  margin-left: auto; /* Pushes it to the right */
+}
+
+.settings-button {
+  background: transparent;
+  border: 1px solid #d6bfc7;
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  color: #676464;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings-button:hover {
+  background: rgba(214, 191, 199, 0.1);
+  color: #d6bfc7;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1001;
+  margin-top: 0.5rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #676464;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(214, 191, 199, 0.1);
+  color: #d6bfc7;
+}
+
+.dropdown-menu a:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-menu a:last-child {
+  border-radius: 0 0 8px 8px;
 }
