@@ -48,3 +48,18 @@ nav {
   text-decoration-color: #e98bab;
   text-underline-offset: 10px
 }
+
+.navbar .logo-link {
+  color: inherit !important;
+  text-decoration: underline;
+  text-decoration-color: transparent !important;
+  text-underline-offset: 10px;
+}
+
+.navbar .logo-link:hover,
+.navbar .logo-link.active {
+  color: inherit !important;
+  text-decoration: underline;
+  text-decoration-color: #e98bab !important;
+  text-underline-offset: 10px;
+}
