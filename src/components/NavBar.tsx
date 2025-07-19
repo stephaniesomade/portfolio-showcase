@@ -27,9 +27,7 @@ function Navbar() {
         </button>
         {isDropdownOpen && (
           <div className="dropdown-menu">
-            <a href="#" onClick={() => setIsDropdownOpen(false)}>Profile</a>
-            <a href="#" onClick={() => setIsDropdownOpen(false)}>Preferences</a>
-            <a href="#" onClick={() => setIsDropdownOpen(false)}>Logout</a>
+            <a href="#" onClick={() => setIsDropdownOpen(false)}>Dark Mode</a>
           </div>
         )}
       </div>
