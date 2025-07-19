@@ -5,8 +5,9 @@ import Navbar from './components/NavBar'
 
 import Home from "./pages/Home";
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Testimonials from "./pages/Testimonials";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/aboutme" element={<AboutMe />} />
       </Routes>
     </>
   );

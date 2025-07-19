@@ -6,7 +6,7 @@ nav {
   background-color: transparent;  /* fully see-through */
   display: flex;
   align-items: center;
-  justify-content: flex-end;      /* nav links aligned right */
+  justify-content: flex-start;     
   padding: 0 2rem;
   z-index: 100;
   backdrop-filter: blur(10px);
@@ -14,14 +14,14 @@ nav {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem 2rem;
+  justify-content: flex-start;
+  /* padding: 1rem 2rem; */
   gap: 2rem;
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   z-index: 1000;
 }
 
@@ -32,9 +32,8 @@ nav {
 
 .nav-links a {
   position: relative;
-  color: #341616;                   /* dark text, good for light backgrounds */
-  font-weight: 600;
-  font-size: 1.1rem;
+  color: #676464;                
+  font-size: 0.7rem;
   padding: 0.5rem 1.3rem;
   border-radius: 20px;
   text-decoration: none;
@@ -44,23 +43,8 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #d66f91;                /* soft pink text on hover/active */
-}
-
-/* Pink frosted glass bubble */
-.nav-links a:hover::before,
-.nav-links a.active::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  background: rgba(247, 154, 185, 0.15); /* light pink, subtle */
-  border-radius: 20px;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 111, 145, 0.3);
-  box-shadow: 0 3px 8px rgba(214, 111, 145, 0.2);
-  z-index: -1;
-  transition: all 0.3s ease;
+  color: #d6bfc7; 
+  text-decoration: underline;
+  text-decoration-color: #e98bab;
+  text-underline-offset: 10px
 }

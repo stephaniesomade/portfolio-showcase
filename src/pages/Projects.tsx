@@ -1,5 +1,12 @@
-import React from 'react'
 
 export default function Projects() {
-  return <h1>Welcome to my portfolio ✨</h1>
+  return (
+    <div className="home-container">
+      <div className="glass-card">
+        <h1 className="name">Stephanie Somade</h1>
+        <p className="tagline">Developer & Fashion Enthusiast</p>
+        <button className="cta-button">Explore My Work</button>
+      </div>
+    </div>
+  )
 }

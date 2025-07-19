@@ -1,5 +1,4 @@
-
-export default function Resume() {
+export default function AboutMe() {
   return (
     <div className="home-container">
       <div className="glass-card">
