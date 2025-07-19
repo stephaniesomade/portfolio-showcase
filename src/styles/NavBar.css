@@ -32,7 +32,7 @@ nav {
 
 .nav-links a {
   position: relative;
-  color: #676464;                
+  color: #d6bfc7;  
   font-size: 0.7rem;
   padding: 0.5rem 1.3rem;
   border-radius: 20px;
@@ -43,14 +43,14 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #d6bfc7; 
+  color: #676464;  
   text-decoration: underline;
   text-decoration-color: #e98bab;
   text-underline-offset: 10px
 }
 
 .navbar .logo-link {
-  color: inherit !important;
+  color: #d6bfc7 !important;  
   text-decoration: underline;
   text-decoration-color: transparent !important;
   text-underline-offset: 10px;
@@ -58,7 +58,7 @@ nav {
 
 .navbar .logo-link:hover,
 .navbar .logo-link.active {
-  color: inherit !important;
+  color: #676464 !important;  
   text-decoration: underline;
   text-decoration-color: #e98bab !important;
   text-underline-offset: 10px;
