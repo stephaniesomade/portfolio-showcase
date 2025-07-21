@@ -4,7 +4,6 @@ import '../styles/NavBar.css'
 import Logo from "./Logo";
 
 function Navbar() {
-
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   return (
     <nav className="navbar">
@@ -19,7 +18,7 @@ function Navbar() {
       </div>
 
       <div className="settings-dropdown">
-        <button 
+        <button
           className="settings-button"
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         >

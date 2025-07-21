@@ -62,7 +62,7 @@ nav {
 .navbar .logo-link:hover,
 .navbar .logo-link.active {
   color: #676464 !important;  
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: #e98bab !important;
   text-underline-offset: 10px;
 }

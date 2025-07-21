@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import '../styles/SubNavBar.css'
 
 function SubNavBar() {
-
   return (
     <nav className="subnavbar">
       <div className="subnav-links">
