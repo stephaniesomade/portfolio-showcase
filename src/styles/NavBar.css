@@ -123,6 +123,31 @@ nav {
   border-radius: 0 0 8px 8px;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .navbar {
+    padding: 0.6rem 1.5rem;
+    gap: 1.5rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: calc(100vw - 2rem);
+    border-radius: 0.8rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .settings-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.65rem;
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   nav {

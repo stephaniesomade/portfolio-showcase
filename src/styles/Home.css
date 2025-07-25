@@ -126,10 +126,51 @@ body {
   margin-bottom: 1rem;
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .title {
+    padding-top: 90px; 
+  }
+
+  .profile-section {
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .title-image {
+    width: 220px;
+    height: 300px;
+    border-radius: 90px;
+  }
+
+  .profile-text h1 {
+    font-size: 3rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .cv-btn {
+    padding: 0.45rem 1.3rem;
+    font-size: 0.85rem;
+  }
+
+  .profile-nav {
+    padding: 0 2rem 1rem;
+    gap: 1.8rem;
+    justify-content: center;
+  }
+
+  .bio-section {
+    padding: 2rem;
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .title {
-    padding-top: 100px;
+    padding-top: 100px; /* Increased to clear the navbar */
   }
 
   .top-nav {
