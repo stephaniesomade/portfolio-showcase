@@ -87,15 +87,15 @@ export default function Home() {
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem'}}>
           <div style={{background: 'rgba(255,255,255,0.6)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center'}}>
             <h4 style={{color: '#8b5a6b', marginBottom: '0.5rem'}}>Email</h4>
-            <p style={{color: '#666', margin: '0'}}>stephanie@example.com</p>
+            <p style={{color: '#666', margin: '0'}}>stephaniesomadee@gmail.com</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.6)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center'}}>
             <h4 style={{color: '#8b5a6b', marginBottom: '0.5rem'}}>LinkedIn</h4>
-            <p style={{color: '#666', margin: '0'}}>linkedin.com/in/stephanie</p>
+            <p style={{color: '#666', margin: '0'}}>linkedin.com/in/stephanie-somade</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.6)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center'}}>
             <h4 style={{color: '#8b5a6b', marginBottom: '0.5rem'}}>GitHub</h4>
-            <p style={{color: '#666', margin: '0'}}>github.com/stephanie</p>
+            <p style={{color: '#666', margin: '0'}}>github.com/stephaniesomadee</p>
           </div>
         </div>
       </section>
