@@ -137,27 +137,29 @@ body {
 }
 
 .home-btn {
-  background: linear-gradient(135deg, #f8bbd9 0%, #f48fb1 100%);
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 25px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #4a4a4a;
   cursor: pointer;
   width: fit-content;
   margin-top: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(244, 143, 177, 0.3);
+  box-shadow: 0 8px 20px rgba(253, 242, 248, 0.4);
   position: relative;
   overflow: hidden;
   animation: fadeInUp 0.8s ease-out 0.4s both;
+  border: 1px solid rgba(252, 231, 243, 0.3);
 }
 
 .home-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(244, 143, 177, 0.4);
-  background: linear-gradient(135deg, #f48fb1 0%, #ec407a 100%);
+  box-shadow: 0 12px 30px rgba(253, 242, 248, 0.6);
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  color: #2d2d2d;
 }
 
 .home-btn::before {
@@ -199,7 +201,7 @@ body {
   transform: translateX(-50%);
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #f8bbd9, transparent);
+  background: linear-gradient(90deg, transparent, #fdf2f8, transparent);
   border-radius: 1px;
 }
 
@@ -211,7 +213,7 @@ body {
   transform: translateX(-50%);
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #f8bbd9, transparent);
+  background: linear-gradient(90deg, transparent, #fdf2f8, transparent);
   border-radius: 1px;
 }
 
@@ -229,8 +231,8 @@ body {
 }
 
 .profile-nav a:hover {
-  color: #f48fb1;
-  background: rgba(244, 143, 177, 0.05);
+  color: #6b7280;
+  background: rgba(253, 242, 248, 0.3);
   transform: translateY(-2px);
 }
 
@@ -261,7 +263,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #f8bbd9, #f48fb1, #f8bbd9);
+  background: linear-gradient(90deg, #fdf2f8, #fce7f3, #fdf2f8);
 }
 
 .bio-section h2, .portfolio-section h2, .contact-section h2 {
@@ -280,7 +282,7 @@ body {
   left: 0;
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #f8bbd9, #f48fb1);
+  background: linear-gradient(90deg, #fdf2f8, #fce7f3);
   border-radius: 2px;
 }
 
@@ -327,7 +329,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #f8bbd9, #f48fb1);
+  background: linear-gradient(90deg, #fdf2f8, #fce7f3);
 }
 
 /* Tablet Responsiveness */

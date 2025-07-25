@@ -86,15 +86,15 @@ export default function Home() {
         <p>I'm always excited to connect with fellow developers, potential collaborators, or anyone interested in discussing technology and innovation. Let's create something amazing together!</p>
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem'}}>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
-            <h4 style={{color: '#f48fb1', marginBottom: '0.5rem', fontWeight: '600'}}>Email</h4>
+            <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>Email</h4>
             <p style={{color: '#4a4a4a', margin: '0'}}>stephanie@example.com</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
-            <h4 style={{color: '#f48fb1', marginBottom: '0.5rem', fontWeight: '600'}}>LinkedIn</h4>
+            <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>LinkedIn</h4>
             <p style={{color: '#4a4a4a', margin: '0'}}>linkedin.com/in/stephanie</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
-            <h4 style={{color: '#f48fb1', marginBottom: '0.5rem', fontWeight: '600'}}>GitHub</h4>
+            <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>GitHub</h4>
             <p style={{color: '#4a4a4a', margin: '0'}}>github.com/stephanie</p>
           </div>
         </div>
