@@ -23,9 +23,22 @@ nav {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  width: calc(100vw - 4rem); /* Full viewport width minus left margin and padding */
+  width: calc(100vw - 4rem); 
   z-index: 1000;
-  box-sizing: border-box; /* Include padding in width calculation */
+  box-sizing: border-box; 
+  position: relative;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background: linear-gradient(90deg, #f6c2d7, #e98bab, #f6c2d7);
+  border-radius: 1px;
+  z-index: 1;
 }
 
 .nav-links {
@@ -69,7 +82,7 @@ nav {
 
 .settings-dropdown {
   position: relative;
-  margin-left: auto; /* Pushes it to the right */
+  margin-left: auto;
 }
 
 .settings-button {
@@ -133,6 +146,11 @@ nav {
     border-radius: 0.8rem;
   }
 
+  .navbar::after {
+    left: 0.8rem;
+    right: 0.8rem;
+  }
+
   .nav-links {
     gap: 1.2rem;
   }
@@ -165,6 +183,11 @@ nav {
     min-height: auto;
   }
 
+  .navbar::after {
+    left: 0.6rem;
+    right: 0.6rem;
+  }
+
   .nav-links {
     gap: 0.8rem;
     flex-wrap: wrap;
@@ -193,6 +216,11 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .navbar::after {
+    left: 0.4rem;
+    right: 0.4rem;
   }
 
   .nav-links {
