@@ -9,6 +9,15 @@ export default function Home() {
     navigate('/resume')
   }
 
+  const aboutMe = () => {
+    navigate('/aboutme')
+  }
+
+  const testimonials = () => {
+    navigate('/testimonials')
+  }
+
+
   return (
     <div className="title">
       <div className="profile-section">
@@ -16,7 +25,7 @@ export default function Home() {
         <div className="profile-text">
           <h1>Stephanie<br />Somade</h1>
           <p className="role">Software Engineer</p>
-          <button className="cv-btn" onClick={handleSeeCV}>See CV</button>
+          <button className="home-btn" onClick={handleSeeCV}>See CV</button>
         </div>
       </div>
       <nav className="profile-nav">
@@ -27,6 +36,9 @@ export default function Home() {
       <section id="bio" className="bio-section">
         <h2>Bio</h2>
         <p>Welcome to my bio section. Here you can learn more about my background, experience, and passion for software engineering.</p>
+        <button className="home-btn" onClick={aboutMe}>Learn More About Me</button>
+        <button className="home-btn" onClick={testimonials}>See Testimonials</button>
+
       </section>
       <section id="portfolio" className="portfolio-section">
         <h2>Portfolio</h2>
