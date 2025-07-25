@@ -3,10 +3,10 @@ import '../styles/Home.css';
 
 export default function Home() {
 
-  const navigate = useNavigate(); 
-  
-  const handleSeeCV = () => { 
-     navigate('/resume')
+  const navigate = useNavigate();
+
+  const handleSeeCV = () => {
+    navigate('/resume')
   }
 
   return (
@@ -26,6 +26,15 @@ export default function Home() {
       </nav>
       <section id="bio" className="bio-section">
         <h2>Bio</h2>
+        <p>Welcome to my bio section. Here you can learn more about my background, experience, and passion for software engineering.</p>
+      </section>
+      <section id="portfolio" className="portfolio-section">
+        <h2>Portfolio</h2>
+        <p>Explore my portfolio showcasing various projects and technical skills I've developed throughout my career.</p>
+      </section>
+      <section id="contact" className="contact-section">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me for collaboration opportunities, questions, or just to say hello!</p>
       </section>
     </div>
   );

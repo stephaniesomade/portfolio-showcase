@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -147,14 +152,23 @@ body {
   color: #333;
 }
 
-.bio-section {
+.bio-section, .portfolio-section, .contact-section {
   padding: 2rem;
+  margin-bottom: 2rem;
+  scroll-margin-top: 100px;
 }
 
-.bio-section h2 {
+.bio-section h2, .portfolio-section h2, .contact-section h2 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 1rem;
+}
+
+.bio-section p, .portfolio-section p, .contact-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
 }
 
 /* Tablet Responsiveness */
@@ -194,15 +208,16 @@ body {
     justify-content: center;
   }
 
-  .bio-section {
+  .bio-section, .portfolio-section, .contact-section {
     padding: 2rem;
+    scroll-margin-top: 80px;
   }
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .title {
-    padding-top: 100px; /* Increased to clear the navbar */
+    padding-top: 100px;
   }
 
   .top-nav {
@@ -262,8 +277,9 @@ body {
     min-width: 80px;
   }
 
-  .bio-section {
+  .bio-section, .portfolio-section, .contact-section {
     padding: 1.5rem 1rem;
+    scroll-margin-top: 120px;
   }
 }
 
@@ -329,11 +345,12 @@ body {
     min-width: 70px;
   }
 
-  .bio-section {
+  .bio-section, .portfolio-section, .contact-section {
     padding: 1rem 0.5rem;
+    scroll-margin-top: 140px;
   }
 
-  .bio-section h2 {
+  .bio-section h2, .portfolio-section h2, .contact-section h2 {
     font-size: 1.3rem;
   }
 }
