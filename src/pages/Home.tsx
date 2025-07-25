@@ -1,6 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 
 export default function Home() {
+
+  const navigate = useNavigate(); 
+  
+  const handleSeeCV = () => { 
+     navigate('/resume')
+  }
+
   return (
     <div className="title">
       <div className="profile-section">
@@ -8,7 +16,7 @@ export default function Home() {
         <div className="profile-text">
           <h1>Stephanie<br />Somade</h1>
           <p className="role">Software Engineer</p>
-          <button className="cv-btn">See CV</button>
+          <button className="cv-btn" onClick={handleSeeCV}>See CV</button>
         </div>
       </div>
       <nav className="profile-nav">
