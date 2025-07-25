@@ -17,6 +17,10 @@ export default function Home() {
     navigate('/testimonials')
   }
 
+  const projects = () => {
+    navigate('/projects')
+  }
+
   return (
     <div className="title">
       <div className="profile-section">
@@ -48,10 +52,10 @@ export default function Home() {
         <h2>Portfolio</h2>
         <p>Explore my portfolio showcasing various projects and technical skills I've developed throughout my career. Each project represents a unique challenge and learning opportunity.</p>
         
-        <div className="portfolio-grid">
-          <div className="project-card">
-            <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>E-Commerce Platform</h3>
-            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>A full-stack e-commerce solution built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.</p>
+        <div className="portfolio-grid" onClick={projects}>
+          <div className="project-card" onClick={projects}>
+            <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Weather App</h3>
+            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>Description</p>
             <div style={{marginTop: '1rem'}}>
               <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>React</span>
               <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Node.js</span>
@@ -59,25 +63,26 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="project-card">
+          <div className="project-card" onClick={projects}>
             <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Task Management App</h3>
-            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>A collaborative task management application with real-time updates.</p>
             <div style={{marginTop: '1rem'}}>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Vue.js</span>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Firebase</span>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', border: '1px solid rgba(0,0,0,0.1)'}}>WebSocket</span>
+              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Node.js</span>
+              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Express</span>
+              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', border: '1px solid rgba(0,0,0,0.1)'}}>MongoDB</span>
             </div>
           </div>
           
-          <div className="project-card">
+          <div className="project-card" onClick={projects}>
             <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Data Visualization Dashboard</h3>
-            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>An interactive dashboard for data analysis and visualization, featuring custom charts, filters, and export functionality.</p>
+            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>Description</p>
             <div style={{marginTop: '1rem'}}>
               <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>D3.js</span>
               <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Python</span>
               <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', border: '1px solid rgba(0,0,0,0.1)'}}>PostgreSQL</span>
             </div>
           </div>
+          <button className="home-btn" onClick={projects}>Find out more about these Projects</button>
         </div>
       </section>
       
@@ -87,15 +92,15 @@ export default function Home() {
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem'}}>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
             <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>Email</h4>
-            <p style={{color: '#4a4a4a', margin: '0'}}>stephanie@example.com</p>
+            <p style={{color: '#4a4a4a', margin: '0'}}>stephaniesomadee@gmail.com</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
             <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>LinkedIn</h4>
-            <p style={{color: '#4a4a4a', margin: '0'}}>linkedin.com/in/stephanie</p>
+            <p style={{color: '#4a4a4a', margin: '0'}}>linkedin.com/in/stephanie-somade-4342131b1/</p>
           </div>
           <div style={{background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '12px', textAlign: 'center', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
             <h4 style={{color: '#9ca3af', marginBottom: '0.5rem', fontWeight: '600'}}>GitHub</h4>
-            <p style={{color: '#4a4a4a', margin: '0'}}>github.com/stephanie</p>
+            <p style={{color: '#4a4a4a', margin: '0'}}>github.com/stephaniesomade</p>
           </div>
         </div>
       </section>
