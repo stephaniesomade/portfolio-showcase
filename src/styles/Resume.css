@@ -125,44 +125,242 @@
   text-decoration: underline;
 }
 
+/* Mobile PDF Container */
+.mobile-pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 1rem;
+  margin-top: 2rem; /* Add space below navbar */
+}
+
+.mobile-pdf-preview {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 100%;
+}
+
+.pdf-icon {
+  display: none; /* Hide PDF icon on mobile */
+}
+
+.mobile-pdf-preview h3 {
+  color: #2d2d2d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.mobile-pdf-preview p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.mobile-pdf-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-pdf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+}
+
+.mobile-pdf-btn.primary {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+  color: #4a4a4a;
+  border: 1px solid rgba(252, 231, 243, 0.3);
+  box-shadow: 0 8px 20px rgba(253, 242, 248, 0.4);
+}
+
+.mobile-pdf-btn.primary:hover {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  color: #2d2d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(253, 242, 248, 0.6);
+}
+
+.mobile-pdf-btn.secondary {
+  background: rgba(255, 255, 255, 0.8);
+  color: #6b7280;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-pdf-btn.secondary:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-pdf-btn svg {
+  flex-shrink: 0;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .resume-container {
-    padding: 1rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
   }
 
   .resume-header {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem; /* Added 2rem more - was 3rem, now 5rem */
+    background: rgba(255, 255, 255, 0.9); /* Fixed typo - was 'rga' */
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Restore box shadow */
+    backdrop-filter: blur(10px); /* Restore backdrop filter */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Restore border */
   }
 
   .resume-header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin: 0;
   }
 
   .download-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    display: none; /* Hide the original download button on mobile */
   }
 
   .pdf-viewer {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 200px);
+    margin: 0;
+    border-radius: 16px;
+  }
+
+  .pdf-viewer iframe {
+    border-radius: 16px;
+  }
+
+  .pdf-fallback {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: block;
+  }
+
+  .pdf-fallback p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pdf-fallback a {
+    display: inline-block;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    color: #4a4a4a;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid rgba(252, 231, 243, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .pdf-fallback a:hover {
+    background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+    color: #2d2d2d;
+    transform: translateY(-2px);
+  }
+
+  /* Mobile PDF container adjustments */
+  .mobile-pdf-container {
+    margin-top: 1rem; 
+    padding: 1.5rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  .resume-container {
+    padding: 0.25rem;
+    padding-top: 0.5rem; 
+  }
+
+  .resume-header {
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 9rem; 
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
   .resume-header h1 {
     font-size: 1.8rem;
   }
 
   .download-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
+    display: none; 
   }
 
   .pdf-viewer {
-    height: calc(100vh - 280px);
+    height: calc(100vh - 180px);
+    border-radius: 12px;
+  }
+
+  .pdf-viewer iframe {
+    border-radius: 12px;
+  }
+
+  /* Enhanced mobile PDF fallback */
+  .pdf-fallback {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .pdf-fallback p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #2d2d2d;
+  }
+
+  /* Mobile PDF container for small screens */
+  .mobile-pdf-container {
+    margin-top: 0rem; /* Remove margin to close gap on small mobile */
+    padding: 1rem 0.5rem;
+    min-height: calc(100vh - 500px); /* Adjust for the larger header margin */
+  }
+
+  .mobile-pdf-preview {
+    padding: 2rem 1.5rem; /* Restore padding on small screens */
+  }
+
+  .mobile-pdf-preview h3 {
+    font-size: 1.3rem; /* Slightly smaller heading */
+  }
+
+  .mobile-pdf-preview p {
+    font-size: 0.9rem; /* Smaller text */
   }
 }
