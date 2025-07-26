@@ -49,9 +49,10 @@
   font-size: 1.3rem;
   color: #4a4a4a;
   line-height: 1.6;
-  margin: 0;
-  max-width: 700px;
   margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%; 
 }
 
 /* Testimonials Grid */
@@ -229,6 +230,7 @@
 
   .hero-subtitle {
     font-size: 1.1rem;
+    align-items: center;
   }
 
   .testimonials-grid {
