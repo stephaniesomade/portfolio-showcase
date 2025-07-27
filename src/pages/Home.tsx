@@ -9,7 +9,6 @@ export default function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    // If we have a scrollToContact flag or if the hash is #contact
     if (location.hash === '#contact') {
       const contactSection = document.getElementById('contact');
       if (contactSection) {

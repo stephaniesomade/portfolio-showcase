@@ -5,7 +5,7 @@ export default function AboutMe() {
   const navigate = useNavigate();
 
   const contact = () => {
-    navigate('/contact')
+    navigate('/#contact')
   }
   const projects = () => {
     navigate('/projects')
@@ -14,7 +14,7 @@ export default function AboutMe() {
   return (
     <div className="about-container">
       <div className="about-hero">
-        <div className="hero-content">
+        <div className="hero-content" id="aboutme-title">
           <h1>I'm Stephanie.</h1>
           <p className="hero-subtitle">A passionate software engineer who loves creating beautiful digital experiences with robust capabilities.</p>
         </div>

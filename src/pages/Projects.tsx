@@ -23,7 +23,7 @@ export default function Projects() {
   };
 
   const home = () => { 
-    navigate('/')
+    navigate('/#contact')
   }
 
   const aboutMe = () => {
