@@ -20,7 +20,7 @@ export default function TaskManager() {
   };
 
   const contact = () => {
-    navigate('/contact');
+    navigate('/#contact');
   };
 
   return (

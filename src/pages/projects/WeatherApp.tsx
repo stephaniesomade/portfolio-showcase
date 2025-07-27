@@ -19,7 +19,7 @@ export default function WeatherApp() {
   };
 
   const contact = () => {
-    navigate('/contact');
+    navigate('/#contact');
   };
 
   return (
@@ -78,7 +78,7 @@ export default function WeatherApp() {
         <div className="content-section">
           <h2>Technical Implementation</h2>
           <p>Built with React and TypeScript for type safety and maintainable code. The application uses modern React hooks for state management and implements custom animations using CSS transitions. The OpenWeather API integration provides reliable weather data with proper error handling and loading states.</p>
-
+          
           <div className="tech-details">
             <div className="tech-detail">
               <h4>Frontend</h4>

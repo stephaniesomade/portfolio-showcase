@@ -1,11 +1,22 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import '../styles/Home.css';
 import TaskManager from './projects/TaskManager';
 import WeatherApp from './projects/WeatherApp';
 
 export default function Home() {
-
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // If we have a scrollToContact flag or if the hash is #contact
+    if (location.hash === '#contact') {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const handleSeeCV = () => {
     navigate('/resume')
@@ -29,6 +40,19 @@ export default function Home() {
 
   const projects = () => {
     navigate('/projects')
+  }
+
+  const contact = () => {
+    // If we're already on the home page, just scroll
+    if (location.pathname === '/') {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate home with the contact hash
+      navigate('/#contact');
+    }
   }
 
   return (
