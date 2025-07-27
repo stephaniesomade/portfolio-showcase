@@ -1,6 +1,7 @@
 import '../../styles/ProjectDetail.css';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import weatherImage from '../../assets/weather.jpeg';
 
 export default function WeatherApp() {
   const navigate = useNavigate();
@@ -77,7 +78,7 @@ export default function WeatherApp() {
         <div className="content-section">
           <h2>Technical Implementation</h2>
           <p>Built with React and TypeScript for type safety and maintainable code. The application uses modern React hooks for state management and implements custom animations using CSS transitions. The OpenWeather API integration provides reliable weather data with proper error handling and loading states.</p>
-          
+
           <div className="tech-details">
             <div className="tech-detail">
               <h4>Frontend</h4>
@@ -103,6 +104,13 @@ export default function WeatherApp() {
         <div className="content-section">
           <h2>Challenges & Solutions</h2>
           <p>One of the main challenges was handling various weather conditions and presenting them in a visually appealing way. I solved this by creating a comprehensive icon system and implementing smooth transitions between different weather states. Additionally, optimizing API calls and implementing proper error handling ensured a smooth user experience even with poor network conditions.</p>
+        </div>
+
+        <div className="content-section">
+          <h2>Project Screenshot</h2>
+          <div className="project-screenshot-container">
+            <img src={weatherImage} alt="Weather App Screenshot" className="project-screenshot" />
+          </div>
         </div>
       </div>
 
