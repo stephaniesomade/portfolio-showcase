@@ -1,6 +1,8 @@
 import '../../styles/ProjectDetail.css';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import tasksImage from '../../assets/tasks.png';
+import tasksdbImage from '../../assets/tasksdb.png';
 
 export default function TaskManager() {
   const navigate = useNavigate();
@@ -101,6 +103,20 @@ export default function TaskManager() {
         <div className="content-section">
           <h2>Challenges & Solutions</h2>
           <p>The biggest challenge was implementing real-time synchronization while maintaining data consistency across multiple users. I solved this by implementing a robust event-driven architecture with proper conflict resolution and optimistic updates. Additionally, creating an intuitive drag-and-drop interface required careful attention to user experience and accessibility.</p>
+        </div>
+
+        <div className="content-section">
+          <h2>Project Screenshot</h2>
+          <div className="project-screenshot-container">
+            <img src={tasksImage} alt="Task Manager Interface" className="project-screenshot" />
+          </div>
+        </div>
+
+        <div className="content-section">
+          <h2>Database Structure</h2>
+          <div className="project-screenshot-container">
+            <img src={tasksdbImage} alt="Task Manager Database Structure" className="project-screenshot" />
+          </div>
         </div>
       </div>
 
