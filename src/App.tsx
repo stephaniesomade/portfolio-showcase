@@ -8,6 +8,8 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Testimonials from "./pages/Testimonials";
 import AboutMe from "./pages/AboutMe";
+import WeatherApp from './pages/projects/WeatherApp';
+import TaskManager from './pages/projects/TaskManager';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/weather-app" element={<WeatherApp />} />
+        <Route path="/projects/task-manager" element={<TaskManager />} />
         <Route path="/aboutme" element={<AboutMe />} />
       </Routes>
     </>

@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
+import TaskManager from './projects/TaskManager';
+import WeatherApp from './projects/WeatherApp';
 
 export default function Home() {
 
@@ -15,6 +17,14 @@ export default function Home() {
 
   const testimonials = () => {
     navigate('/testimonials')
+  }
+
+  const weather = () => {
+    navigate('/projects/weather-app')
+  }
+
+  const taskmanager = () => {
+    navigate('/projects/task-manager')
   }
 
   const projects = () => {
@@ -52,8 +62,8 @@ export default function Home() {
         <h2>Portfolio</h2>
         <p>Explore my portfolio showcasing various projects and technical skills I've developed throughout my career. Each project represents a unique challenge and learning opportunity.</p>
         
-        <div className="portfolio-grid" onClick={projects}>
-          <div className="project-card" onClick={projects}>
+        <div className="portfolio-grid">
+          <div className="project-card" onClick={weather}>
             <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Weather App</h3>
             <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>Description</p>
             <div style={{marginTop: '1rem'}}>
@@ -63,7 +73,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="project-card" onClick={projects}>
+          <div className="project-card" onClick={taskmanager}>
             <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Task Management App</h3>
             <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>A collaborative task management application with real-time updates.</p>
             <div style={{marginTop: '1rem'}}>
@@ -73,17 +83,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="project-card" onClick={projects}>
-            <h3 style={{color: '#1a1a1a', marginBottom: '1rem', fontSize: '1.3rem', fontWeight: '600'}}>Data Visualization Dashboard</h3>
-            <p style={{color: '#4a4a4a', fontSize: '1rem', lineHeight: '1.6'}}>Description</p>
-            <div style={{marginTop: '1rem'}}>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>D3.js</span>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', marginRight: '0.5rem', border: '1px solid rgba(0,0,0,0.1)'}}>Python</span>
-              <span style={{background: '#f1f3f4', color: '#1a1a1a', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.8rem', border: '1px solid rgba(0,0,0,0.1)'}}>PostgreSQL</span>
-            </div>
-          </div>
-          <button className="home-btn" onClick={projects}>Find out more about these Projects</button>
         </div>
+          <button className="home-btn" onClick={projects}>Find out more about these Projects</button>
       </section>
       
       <section id="contact" className="contact-section">
